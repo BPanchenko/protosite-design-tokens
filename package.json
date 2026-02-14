@@ -1,0 +1,29 @@
+{
+  "author": {
+    "email": "boris.v.panchenko@mail.ru",
+    "name": "Boris Panchenko",
+    "url": "http://bp-studio.ru"
+  },
+  "devDependencies": {
+    "@types/node": "25.3.3",
+    "protosite-palette": "3.8.17"
+  },
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./source_code/index.ts"
+    }
+  },
+  "homepage": "http://protosite.xyz",
+  "license": "LGPL-3.0-only",
+  "name": "protosite-design-tokens",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BPanchenko/protosite-design-tokens.git"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "type": "module",
+  "version": "0.0.1-dev"
+}

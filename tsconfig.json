@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "declaration": true,
+    "isolatedModules": true,
+    "lib": ["ESNext"],
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": ".",
+    "rootDir": "."
+  },
+  "files": ["index.d.ts"],
+  "include": ["source_code"],
+  "exclude": ["node_modules"]
+}

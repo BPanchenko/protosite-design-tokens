@@ -1,0 +1,5 @@
+{
+	"$ref": "protosite-palette/design-tokens",
+	"bgcolor": "{color.black}",
+	"fgcolor": "{color.white}"
+}

@@ -1,0 +1,15 @@
+arrowParens: avoid
+endOfLine: crlf
+printWidth: 120
+semi: true
+singleAttributePerLine: true
+singleQuote: true
+trailingComma: es5
+useTabs: true
+plugins:
+  - 'prettier-oxc-parser'
+overrides:
+  - files: '*.{json,yaml,yml}'
+    options:
+      tabWidth: 2
+      useTabs: false

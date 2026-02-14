@@ -1,0 +1,8 @@
+/@types/source/
+/assets/*.map
+/assets/__tests__/__image_snapshots__/__diff_output__/
+/node_modules/
+
+*-lock.json
+*-lock.yaml
+*.lock
