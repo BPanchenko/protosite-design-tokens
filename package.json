@@ -6,24 +6,31 @@
   },
   "devDependencies": {
     "@types/node": "25.3.3",
+    "esbuild": "0.27.3",
     "protosite-palette": "3.8.17"
   },
   "exports": {
     ".": {
       "types": "./index.d.ts",
-      "default": "./source_code/index.ts"
+      "default": "./index.js"
     }
   },
   "homepage": "http://protosite.xyz",
+  "files": [
+    "assets/*",
+    "index.*",
+    "types.d.ts"
+  ],
   "license": "LGPL-3.0-only",
   "name": "protosite-design-tokens",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BPanchenko/protosite-design-tokens.git"
   },
-  "engines": {
-    "node": ">=18.17.0"
+  "scripts": {
+    "build": "esbuild source_code/index.ts --outdir=. --platform=node --allow-overwrite --bundle --format=esm --minify",
+    "debug": "node --test --watch"
   },
   "type": "module",
-  "version": "0.0.1-dev"
+  "version": "1.0.1-beta"
 }

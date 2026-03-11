@@ -35,7 +35,7 @@ const retrieveDesignTokens = (source: SourceContent, parents: string[] = []): vo
 
 export { importDesignTokens as default, importDesignTokens };
 
-async function importDesignTokens(specifier: FileName): Promise<void | never> {
+async function importDesignTokens(specifier: TokensGroupName): Promise<void | never> {
 	let filepath = fileURLToPath(import.meta.resolve('../assets/' + specifier + '.tokens'))
 	let content = readFileSync(filepath, {
 		encoding: "utf8"
@@ -43,5 +43,3 @@ async function importDesignTokens(specifier: FileName): Promise<void | never> {
 	let source = await parseSourceContent(JSON.parse(content))
 	retrieveDesignTokens(source)
 }
-
-type FileName = 'light-color-scheme' | 'dark-color-scheme'

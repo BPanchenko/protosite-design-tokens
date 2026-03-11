@@ -10,7 +10,7 @@
     "outDir": ".",
     "rootDir": "."
   },
-  "files": ["index.d.ts"],
+  "files": ["types.d.ts"],
   "include": ["source_code"],
   "exclude": ["node_modules"]
 }
