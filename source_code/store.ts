@@ -1,17 +1,17 @@
 import { isInternalReference } from "./util.reference-resolver.ts"
 import { isToken } from "./util.token-validator.ts"
 
-const store = new Map<TokenName, Token>()
+const store = new Map<string, Token>()
 
-export const getToken = (name: TokenName | string): Token | never => {
+export const getToken = (name: string): Token | never => {
 	if (store.has(name)) {
 		return store.get(name) as Token
-	} else throw new Error("Token not found")
+	} else throw new Error(`Token "${name}" not found`)
 }
 
-export const hasToken = (name: TokenName | string): boolean => store.has(name)
+export const hasToken = (name: string): boolean => store.has(name)
 
-export const setToken = (name: TokenName | string, input: any): void | never => {
+export const setToken = (name: string, input: any): void | never => {
 	if (isInternalReference(input)) {
 		let token: Token = getToken(input.slice(1, -1))
 		store.set(name, token)

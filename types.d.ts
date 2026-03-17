@@ -5,10 +5,14 @@ declare interface ColorToken extends Token {
 	$value: ColorTokenValue
 	[Symbol.toPrimitive](hint: 'string' | 'number' | 'default'): string | number
 }
-declare type ColorTokenName = 'bgcolor' | 'fgcolor'
+declare type ColorTokenName =
+	| 'color.background'
+	| 'color.foreground'
+
 declare type ColorTokenValue = {
 	alpha?: number,
-	colorSpace: 'a98-rgb'
+	colorSpace:
+	| 'a98-rgb'
 	| 'display-p3'
 	| 'hsl'
 	| 'hwb'

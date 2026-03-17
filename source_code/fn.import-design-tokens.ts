@@ -1,5 +1,7 @@
+import merge from "deepmerge";
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+
 import { setToken } from "./store.ts";
 import { deref, isInternalReference } from "./util.reference-resolver.ts";
 import { isObject, isToken } from "./util.token-validator.ts";
@@ -13,14 +15,20 @@ const parseSourceContent = async (input: SourceContent): Promise<SourceContent> 
 	for (let key of keys) {
 		if (key === '$ref') {
 			let data = await deref(input['$ref'])
-			Object.assign(result, await parseSourceContent(JSON.parse(data)))
+			data = await parseSourceContent(JSON.parse(data))
+			Object.assign(result, data)
 		} else if (props.includes(key)) {
 			result[key] = input[key]
 		} else {
-			result[key] = isObject(input[key]) ? await parseSourceContent(input[key]) : input[key]
+			let data = isObject(input[key]) ? await parseSourceContent(input[key]) : input[key]
+			if (isObject(result[key]) && isObject(data)) {
+				result[key] = merge(result[key], data)
+			} else {
+				result[key] = data
+			}
 		}
 	}
-	return result
+	return Object.seal(result)
 }
 
 const retrieveDesignTokens = (source: SourceContent, parents: string[] = []): void | never => {

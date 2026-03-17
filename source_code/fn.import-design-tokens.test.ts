@@ -4,12 +4,12 @@ import { importDesignTokens, token } from './index.ts';
 
 test("Import tokens `dark-color-scheme` and check the back and front colors", async (_t: test.TestContext) => {
 	await importDesignTokens('dark-color-scheme')
-	strictEqual(token('bgcolor'), 'hwb(222.6 0.088365 0.89748 / 1)')
-	strictEqual(token('fgcolor'), 'hwb(120 1 0 / 1)')
+	strictEqual(token('color.background'), token('color.black'))
+	strictEqual(token('color.foreground'), token('color.gray.50'))
 })
 
 test("Import tokens `light-color-scheme` and check the back and front colors", async (_t: test.TestContext) => {
 	await importDesignTokens('light-color-scheme')
-	strictEqual(token('bgcolor'), 'hwb(120 1 0 / 1)')
-	strictEqual(token('fgcolor'), 'hwb(222.6 0.088365 0.89748 / 1)')
+	strictEqual(token('color.background'), token('color.white'))
+	strictEqual(token('color.foreground'), token('color.gray.900'))
 })

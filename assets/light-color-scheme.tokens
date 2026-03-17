@@ -1,5 +1,7 @@
 {
 	"$ref": "protosite-palette/design-tokens",
-	"bgcolor": "{color.white}",
-	"fgcolor": "{color.black}"
+	"color": {
+		"background": "{color.white}",
+		"foreground": "{color.gray.900}"
+	}
 }
