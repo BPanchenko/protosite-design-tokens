@@ -30,6 +30,11 @@ declare type ColorTokenValue = {
 	hex: string,
 }
 
+declare type PostCSSPluginOptions = {
+	importAtRuleName?: string,
+	valueFunctionName?: string,
+}
+
 declare interface Token {
 	$description?: string
 	$metadata?: string

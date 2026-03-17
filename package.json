@@ -8,6 +8,7 @@
     "@types/node": "25.3.3",
     "deepmerge": "4.3.1",
     "esbuild": "0.27.3",
+    "postcss": "8.5.8",
     "protosite-palette": "3.8.17"
   },
   "exports": {
@@ -30,8 +31,9 @@
   },
   "scripts": {
     "build": "esbuild source_code/index.ts --outdir=. --platform=node --allow-overwrite --bundle --format=esm --minify",
-    "debug": "node --test --watch"
+    "debug": "node --test --test-update-snapshots --watch",
+    "test": "node --test"
   },
   "type": "module",
-  "version": "1.0.2-beta"
+  "version": "1.1.2-beta"
 }
