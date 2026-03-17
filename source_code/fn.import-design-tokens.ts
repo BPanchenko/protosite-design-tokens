@@ -1,6 +1,6 @@
 import merge from "deepmerge";
 import { readFileSync } from "node:fs";
-import { fileURLToPath } from "node:url";
+import { resolve } from "node:path";
 
 import { setToken } from "./store.ts";
 import { deref, isInternalReference } from "./util.reference-resolver.ts";
@@ -41,10 +41,8 @@ const retrieveDesignTokens = (source: SourceContent, parents: string[] = []): vo
 	}
 }
 
-export { importDesignTokens as default, importDesignTokens };
-
-async function importDesignTokens(specifier: TokensGroupName): Promise<void | never> {
-	let filepath = fileURLToPath(import.meta.resolve('../assets/' + specifier + '.tokens'))
+export const importDesignTokens = async (specifier: TokensGroupName): Promise<void | never> => {
+	let filepath = resolve(import.meta.dirname, '../assets', specifier + '.tokens')
 	let content = readFileSync(filepath, {
 		encoding: "utf8"
 	})
