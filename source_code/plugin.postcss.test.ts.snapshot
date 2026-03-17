@@ -1,7 +1,7 @@
 exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > different quotes encloses the light theme settings 1`] = `
-"body { background-color: hwb(120 1 0 / 1); color: hwb(123.25 0.011087 0.98612 / 1); }"
+"body { background-color: hwb(120 1 0); color: hwb(123.25 0.011087 0.98612); }"
 `;
 
 exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > the dark theme settings passed without quotes 1`] = `
-"body { background-color: hwb(222.6 0.088365 0.89748 / 1); color: hwb(122.77 0.92825 0.062277 / 1); }"
+"body { background-color: hwb(222.6 0.088365 0.89748); color: hwb(122.77 0.92825 0.062277); }"
 `;
