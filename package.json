@@ -15,27 +15,30 @@
   },
   "exports": {
     ".": {
-      "types": "./index.d.ts",
-      "default": "./index.js"
+      "types": "./assets/index.d.ts",
+      "import": "./assets/index.js",
+      "require": "./assets/index.cjs"
     }
   },
   "homepage": "http://protosite.xyz",
   "files": [
     "assets/*",
-    "index.*",
     "types.d.ts"
   ],
   "license": "LGPL-3.0-only",
   "name": "protosite-design-tokens",
+  "peerDependencies": {
+    "postcss": "8.x",
+    "protosite-palette": "^3.8.17"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BPanchenko/protosite-design-tokens.git"
   },
   "scripts": {
-    "build": "esbuild source_code/index.ts --outdir=. --platform=node --allow-overwrite --bundle --format=esm --minify",
     "debug": "node --test --test-update-snapshots --watch",
     "test": "node --test"
   },
   "type": "module",
-  "version": "1.1.2-beta"
+  "version": "1.1.3"
 }
