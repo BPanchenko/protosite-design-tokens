@@ -1,0 +1,50 @@
+{
+	"size": {
+		"$type": "size",
+		"$value": 120,
+		"icon": {
+			"$type": "size",
+			"$value": 120,
+			"sm": {
+				"$type": "size",
+				"$value": 120
+			},
+			"lg": {
+				"$type": "size",
+				"$value": 120
+			}
+		},
+		"sm": {
+			"$type": "size",
+			"$value": 120,
+			"icon": {
+				"$type": "size",
+				"$value": 120,
+				"sm": {
+					"$type": "size",
+					"$value": 120
+				},
+				"lg": {
+					"$type": "size",
+					"$value": 120
+				}
+			}
+		},
+		"lg": {
+			"$type": "size",
+			"$value": 120,
+			"icon": {
+				"$type": "size",
+				"$value": 120,
+				"sm": {
+					"$type": "size",
+					"$value": 120
+				},
+				"lg": {
+					"$type": "size",
+					"$value": 120
+				}
+			}
+		}
+	}
+}
