@@ -5,13 +5,14 @@
     "url": "http://bp-studio.ru"
   },
   "devDependencies": {
-    "@types/node": "25.3.3",
+    "@types/node": "25.5.0",
     "chromatic-chandelier": "0.22.71",
     "deepmerge": "4.3.1",
-    "esbuild": "0.27.3",
+    "esbuild": "0.27.4",
     "esbuild-shim-plugin": "1.0.3",
     "postcss": "8.5.8",
-    "protosite-palette": "3.8.17"
+    "protosite-palette": "3.8.17",
+    "typescript": "6.0.2"
   },
   "exports": {
     ".": {
@@ -29,7 +30,8 @@
   "name": "protosite-design-tokens",
   "peerDependencies": {
     "postcss": "8.x",
-    "protosite-palette": "^3.8.17"
+    "protosite-palette": "^3.8.17",
+    "typescript": "6.x"
   },
   "repository": {
     "type": "git",

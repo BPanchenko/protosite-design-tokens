@@ -5,11 +5,10 @@
     "isolatedModules": true,
     "lib": ["ESNext"],
     "noEmit": true,
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "bundler",
-    "outDir": ".",
-    "rootDir": ".",
-    "target": "es2024"
+    "target": "esnext",
+    "types": ["node"]
   },
   "files": ["types.d.ts"],
   "include": ["source_code"],
