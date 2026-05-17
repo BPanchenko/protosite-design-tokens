@@ -5,14 +5,14 @@
     "url": "http://bp-studio.ru"
   },
   "devDependencies": {
-    "@types/node": "25.5.0",
+    "@types/node": "25.8.0",
     "chromatic-chandelier": "0.22.72",
     "deepmerge": "4.3.1",
-    "esbuild": "0.27.4",
+    "esbuild": "0.28.0",
     "esbuild-shim-plugin": "1.0.3",
-    "postcss": "8.5.8",
+    "postcss": "8.5.14",
     "protosite-palette": "3.8.17",
-    "typescript": "6.0.2"
+    "typescript": "6.0.3"
   },
   "exports": {
     ".": {
@@ -42,5 +42,5 @@
     "test": "node --test"
   },
   "type": "module",
-  "version": "1.1.4"
+  "version": "1.2.4"
 }

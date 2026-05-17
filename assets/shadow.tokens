@@ -1,0 +1,293 @@
+{
+	"$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+	"shadow": {
+		"1dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0],
+					"blur": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.2],
+					"blur": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.1],
+					"blur": 0.3,
+					"spread": -0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"2dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.3],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.1],
+					"blur": 0.5,
+					"spread": -0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"3dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.3],
+					"blur": 0.3,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.3],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.1],
+					"blur": 0.8,
+					"spread": -0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"4dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.2],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.4],
+					"blur": 0.5,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.1],
+					"blur": 1,
+					"spread": -0.1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"6dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.6],
+					"blur": 1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.1],
+					"blur": 1.8,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.3],
+					"blur": 0.5,
+					"spread": -0.1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"8dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.8],
+					"blur": 1,
+					"spread": 0.1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.3],
+					"blur": 1.4,
+					"spread": 0.3,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.4],
+					"blur": 1.5,
+					"spread": -0.3,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"16dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 1.6],
+					"blur": 2.4,
+					"spread": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.6],
+					"blur": 3,
+					"spread": 0.5,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.8],
+					"blur": 1,
+					"spread": -0.5,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"24dp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 2.4],
+					"blur": 3.8,
+					"spread": 0.3,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.14)"
+				}, {
+					"offset": [0, 0.9],
+					"blur": 4.6,
+					"spread": 0.8,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 1.1],
+					"blur": 1.5,
+					"spread": -0.7,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"diffuse": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.1],
+					"blur": 0.1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.08)"
+				}, {
+					"offset": [0, 0.2],
+					"blur": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.12)"
+				}, {
+					"offset": [0, 0.4],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.16)"
+				}, {
+					"offset": [0, 0.8],
+					"blur": 0.8,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}
+			]
+		},
+		"dreamy": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.1],
+					"blur": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.07)"
+				}, {
+					"offset": [0, 0.2],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.07)"
+				}, {
+					"offset": [0, 0.4],
+					"blur": 0.8,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.07)"
+				}, {
+					"offset": [0, 0.8],
+					"blur": 1.6,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.07)"
+				}, {
+					"offset": [0, 1.6],
+					"blur": 3.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.07)"
+				}, {
+					"offset": [0, 3.2],
+					"blur": 6.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.07)"
+				}
+			]
+		},
+		"longer": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.2],
+					"blur": 0.1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.09)"
+				}, {
+					"offset": [0, 0.4],
+					"blur": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.09)"
+				}, {
+					"offset": [0, 0.8],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.09)"
+				}, {
+					"offset": [0, 1.6],
+					"blur": 0.8,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.09)"
+				}, {
+					"offset": [0, 3.2],
+					"blur": 1.6,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.09)"
+				}
+			]
+		},
+		"sharp": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.1],
+					"blur": 0.1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.25)"
+				}, {
+					"offset": [0, 0.2],
+					"blur": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.2)"
+				}, {
+					"offset": [0, 0.4],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.15)"
+				}, {
+					"offset": [0, 0.8],
+					"blur": 0.8,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.1)"
+				}, {
+					"offset": [0, 1.6],
+					"blur": 1.6,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.05)"
+				}
+			]
+		},
+		"shorter": {
+			"$type": "shadow",
+			"$value": [
+				{
+					"offset": [0, 0.1],
+					"blur": 0.1,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.11)"
+				}, {
+					"offset": [0, 0.2],
+					"blur": 0.2,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.11)"
+				}, {
+					"offset": [0, 0.4],
+					"blur": 0.4,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.11)"
+				}, {
+					"offset": [0, 0.6],
+					"blur": 0.8,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.11)"
+				}, {
+					"offset": [0, 0.8],
+					"blur": 1.6,
+					"color": "color(from var(--fgcolor) xyz x y z / 0.11)"
+				}
+			]
+		}
+	}
+}
