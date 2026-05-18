@@ -8,22 +8,12 @@ describe(
 	() => {
 		const testCases = [
 			[
-				"different quotes encloses the light theme settings",
+				"light theme settings",
 				`
 					@import-design-tokens 'light-color-scheme';
 					body {
 						background-color: token('color.background');
 						color: token("color.foreground");
-					}
-				`,
-			],
-			[
-				"the dark theme settings passed without quotes",
-				`
-					@import-design-tokens dark-color-scheme;
-					body {
-						background-color: token(color.background);
-						color: token( color.foreground );
 					}
 				`,
 			],

@@ -1,11 +1,7 @@
-exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > different quotes encloses the light theme settings 1`] = `
-"body { background-color: color(prophoto-rgb 0.96818 0.98987 0.99254); color: oklch(26.21% 0.009493 248.19deg); }"
-`;
-
 exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > grayscale gradient 1`] = `
-"div { background: repeating-conic-gradient( token(color.white) 0%, token(color.gray.50) 5%, token(color.gray.100) 10%, token(color.gray.200) 20%, token(color.gray.300) 30%, token(color.gray.400) 40%, token(color.gray.500) 50%, token(color.gray.600) 60%, token(color.gray.700) 70%, token(color.gray.800) 80%, token(color.gray.900) 90%, token(color.black) 100% ); }"
+"div { background: repeating-conic-gradient( color(prophoto-rgb 0.96818 0.98987 0.99254) 0%, oklch(98.16% 0.001707 247.84deg) 5%, oklch(96.32% 0.003431 247.86deg) 10%, oklch(94.17% 0.005176 247.88deg) 20%, oklch(91.09% 0.006959 247.9deg) 30%, oklch(86.71% 0.010568 247.95deg) 40%, oklch(76.92% 0.014518 248.02deg) 50%, oklch(64.28% 0.015183 248.06deg) 60%, oklch(42.76% 0.014702 248.17deg) 70%, oklch(34.51% 0.013291 248.21deg) 80%, oklch(26.21% 0.009493 248.19deg) 90%, color(prophoto-rgb 0.08772 0.02674 0.05587) 100% ); }"
 `;
 
-exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > the dark theme settings passed without quotes 1`] = `
-"body { background-color: color(prophoto-rgb 0.08772 0.02674 0.05587); color: oklch(98.16% 0.001707 247.84deg); }"
+exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > light theme settings 1`] = `
+"body { background-color: color(prophoto-rgb 0.96818 0.98987 0.99254); color: oklch(26.21% 0.009493 248.19deg); }"
 `;

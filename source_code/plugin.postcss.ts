@@ -1,7 +1,7 @@
 import { importDesignTokens } from "./fn.import-design-tokens.ts";
-import { token } from "./fn.token.ts";
 
-import type { Node, PluginCreator } from "postcss";
+import { type Node, type PluginCreator } from "postcss";
+import { token } from "./fn.token.ts";
 
 const DEFAULT_IMPORT_AT_RULE_NAME = 'import-design-tokens';
 const DEFAULT_VALUE_FUNCTION_NAME = 'token';
@@ -14,8 +14,8 @@ const PostCSSPlugin: PluginCreator<PostCSSPluginOptions> = (opts: PostCSSPluginO
 		...opts
 	};
 
-	const tokenNameRegExp = new RegExp(
-		options.valueFunctionName + "\\(\\W?((?:\\w+)(?:.\\w+)+)\\W?\\)",
+	const tokenArgsRegExp = new RegExp(
+		options.valueFunctionName + "\\(\\W?((?:\\w+)(?:.\\w+)+)\\W?\\s?([\\s\\w]+)?\\)",
 		'g'
 	)
 
@@ -38,9 +38,9 @@ const PostCSSPlugin: PluginCreator<PostCSSPluginOptions> = (opts: PostCSSPluginO
 					.trim().split(' ').at(0);
 
 				importAtRules.set(
-					specifier,
+					specifier ?? '',
 					{
-						filePath: atRule.source.input.file,
+						filePath: atRule.source!.input.file ?? '',
 						node: atRule,
 					}
 				)
@@ -69,22 +69,26 @@ const PostCSSPlugin: PluginCreator<PostCSSPluginOptions> = (opts: PostCSSPluginO
 			}
 		},
 		Declaration(decl, { result }): void {
-			if (!decl.value.toLowerCase().startsWith(options.valueFunctionName)) {
+			let value = decl.value.toLowerCase()
+			if (false === tokenArgsRegExp.test(value)) {
 				return;
 			}
-
-			try {
-				let tokenName = decl.value.matchAll(tokenNameRegExp).toArray().at(0).at(1);
-				decl.value = token(tokenName as TokenName).toString();
-			} catch (err) {
-				decl.warn(
-					result,
-					`Failed to parse and transform "${decl.value}" with error:\n\t`
-					+ ((err instanceof Error) ? err.message : err)
-				);
-			}
+			tokenArgsRegExp.lastIndex = 0
+			let matches = value.matchAll(tokenArgsRegExp).toArray()
+			for (let [str, tokenName, args] of matches)
+				try {
+					let tokenArgs = undefined !== args ? args.split(' ') : []
+					let tokenValue = token(tokenName as TokenName, ...tokenArgs).toString()
+					decl.value = value.replace(str, tokenValue)
+				} catch (err) {
+					decl.warn(
+						result,
+						`Failed to parse and transform "${decl.value}" with error:\n\t`
+						+ ((err instanceof Error) ? err.message : err)
+					);
+				}
 		},
-	};
+	}
 };
 
 PostCSSPlugin.postcss = true;
