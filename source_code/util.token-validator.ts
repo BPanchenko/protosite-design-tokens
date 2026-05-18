@@ -1,3 +1,11 @@
-export const isColorToken = (input: unknown): input is ColorToken => isToken(input) && isObject(input.$value) && input.$type === 'color'
-export const isObject = (value: unknown): value is object & Record<number | string, any> => null !== value && 'object' === typeof value;
-export const isToken = (input: unknown): input is Token => isObject(input) && '$type' in input && '$value' in input
+export const isColorToken = (input: unknown): input is ColorToken =>
+	isToken(input) && isObject(input.$value) && input.$type === 'color'
+
+export const isObject = (value: unknown): value is object & Record<number | string, any> =>
+	null !== value && 'object' === typeof value
+
+export const isToken = (input: unknown): input is Token =>
+	isObject(input) && '$type' in input && '$value' in input
+
+export const isShadowToken = (input: unknown): input is ShadowToken =>
+	isToken(input) && isObject(input.$value) && input.$type === 'shadow'
