@@ -38,6 +38,14 @@ describe(
 						);
 					}
 				`,
+			], [
+				"shadow token and specifying the shadow as the inner",
+				`
+					@import-design-tokens 'shadow';
+					div {
+						box-shadow: token('shadow.4dp' inner);
+					}
+				`,
 			],
 		]
 

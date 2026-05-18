@@ -5,3 +5,7 @@ exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens 
 exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > light theme settings 1`] = `
 "body { background-color: color(prophoto-rgb 0.96818 0.98987 0.99254); color: oklch(26.21% 0.009493 248.19deg); }"
 `;
+
+exports[`PostCSS plugin correctly transforms a CSS code that uses design tokens > shadow token and specifying the shadow as the inner 1`] = `
+"div { box-shadow: 0 0.2rem 0.4rem color(from var(--fgcolor) xyz x y z / 0.14) inset, 0 0.4rem 0.5rem color(from var(--fgcolor) xyz x y z / 0.12) inset, 0 0.1rem 1rem -0.1rem color(from var(--fgcolor) xyz x y z / 0.2) inset; }"
+`;
