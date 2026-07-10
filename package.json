@@ -5,14 +5,14 @@
     "url": "http://bp-studio.ru"
   },
   "devDependencies": {
-    "@types/node": "25.8.0",
+    "@types/node": "26.1.1",
     "chromatic-chandelier": "0.22.72",
     "deepmerge": "4.3.1",
-    "esbuild": "0.28.0",
+    "esbuild": "0.28.1",
     "esbuild-shim-plugin": "1.0.3",
-    "postcss": "8.5.14",
+    "postcss": "8.5.16",
     "protosite-palette": "3.8.17",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "exports": {
     ".": {
@@ -26,12 +26,17 @@
     "assets/*",
     "types.d.ts"
   ],
+  "keywords": [
+    "Design Tokens",
+    "Style Dictionary",
+    "UIKit"
+  ],
   "license": "LGPL-3.0-only",
   "name": "protosite-design-tokens",
   "peerDependencies": {
     "postcss": "8.x",
     "protosite-palette": "^3.8.17",
-    "typescript": "6.x"
+    "typescript": "7.x"
   },
   "repository": {
     "type": "git",
@@ -42,5 +47,5 @@
     "test": "node --test"
   },
   "type": "module",
-  "version": "1.2.5"
+  "version": "1.2.6"
 }
