@@ -1,0 +1,55 @@
+{
+	"$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+	"typography": {
+		"accent": {
+			"demoPage": "",
+			"fontFace": "",
+			"fontFamily": "",
+		},
+		"cursive": {
+			"demoPage": "",
+			"fontFace": "",
+			"fontFamily": "",
+		},
+		"legible": {
+			"demoPage": "",
+			"fontFace": "",
+			"fontFamily": "",
+		},
+		"monospace": {
+			"demoPage": "//protosite.xyz/assets/fonts/clincher-code/demo.html",
+			"fontFace": "//protosite.xyz/assets/fonts/clincher-code/clincher-code.css",
+			"fontFamily": "Clincher Code",
+			"fontSize": {
+				"$type": "size",
+				"$value": 13,
+				"sm": {
+					"$type": "size",
+					"$value": 12
+				},
+				"lg": {
+					"$type": "size",
+					"$value": 17
+				}
+			},
+			"lineHeight": {
+				"$type": "size",
+				"$value": 18,
+				"sm": {
+					"$type": "size",
+					"$value": 16
+				},
+				"lg": {
+					"$type": "size",
+					"$value": 28
+				}
+			}
+		},
+		"ui": {
+			"demoPage": "",
+			"fontFace": "",
+			"fontFamily": "",
+		}
+	}
+
+}
