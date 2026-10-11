@@ -1,47 +1,47 @@
 {
-	"size": {
-		"$type": "size",
+	"space": {
+		"$type": "dimension",
 		"$value": 120,
 		"icon": {
-			"$type": "size",
+			"$type": "dimension",
 			"$value": 120,
 			"sm": {
-				"$type": "size",
+				"$type": "dimension",
 				"$value": 120
 			},
 			"lg": {
-				"$type": "size",
+				"$type": "dimension",
 				"$value": 120
 			}
 		},
 		"sm": {
-			"$type": "size",
+			"$type": "dimension",
 			"$value": 120,
 			"icon": {
-				"$type": "size",
+				"$type": "dimension",
 				"$value": 120,
 				"sm": {
-					"$type": "size",
+					"$type": "dimension",
 					"$value": 120
 				},
 				"lg": {
-					"$type": "size",
+					"$type": "dimension",
 					"$value": 120
 				}
 			}
 		},
 		"lg": {
-			"$type": "size",
+			"$type": "dimension",
 			"$value": 120,
 			"icon": {
-				"$type": "size",
+				"$type": "dimension",
 				"$value": 120,
 				"sm": {
-					"$type": "size",
+					"$type": "dimension",
 					"$value": 120
 				},
 				"lg": {
-					"$type": "size",
+					"$type": "dimension",
 					"$value": 120
 				}
 			}
